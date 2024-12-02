@@ -1,0 +1,107 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+    <style>
+         
+        body {
+            font-family: Arial, sans-serif;
+            background:#f3f8fc; /* Light blue gradient */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            background-color: #fff;
+            color: #333;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #007BFF;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            margin-right: 12px;
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vote for Your Candidate</h1>
+        <form action="vote" method="post">
+            <p>Please select a candidate:</p>
+            <label>
+                <input type="radio" name="candidate_id" value="1" required> Nishchal Kumar
+            </label>
+            <label>
+                <input type="radio" name="candidate_id" value="2"> Chandrashakar Aachar
+            </label>
+            <label>
+                <input type="radio" name="candidate_id" value="3"> RamSwamy Metha
+            </label>
+            <label>
+                <input type="radio" name="candidate_id" value="4"> Uma Shekar
+            </label>
+            <label>
+                <input type="radio" name="candidate_id" value="5"> ByreGowda
+            </label>
+            <input type="submit" value="Vote">
+        </form>
+    </div>
+</body>
+</html>
+ 
